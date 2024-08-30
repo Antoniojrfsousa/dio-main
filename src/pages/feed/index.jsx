@@ -1,10 +1,9 @@
 import { Button } from "../../components/Button"
 import { Header } from "../../components/Header"
-import BannerImagem from "../../assents/image 1.png"
 
 import { Container, TextContent, Title, TitleHighLight } from "./styles"
 
-const Home = () => {
+const Feed = () => {
 
     return (<>
         <Header />
@@ -24,10 +23,10 @@ const Home = () => {
                 <Button title="Começar agora" variant="secondary" onClick={() => null}/>
             </div>
             <div>
-                <img src={BannerImagem} alt="imagem principal" />
+                <img src="" alt="imagem principal" />
             </div>
         </Container>
     </>)
 }
 
-export { Home }
+export { Feed }

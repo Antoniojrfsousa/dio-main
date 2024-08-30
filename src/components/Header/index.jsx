@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assents/logo-dio-a.png';
+import logo from '../../assents/logo-dio 1.png';
 import {
     BuscarInputContainer,
     Container,
