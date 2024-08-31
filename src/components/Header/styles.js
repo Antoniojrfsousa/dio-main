@@ -42,18 +42,12 @@ export const BuscarInputContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    input{
-    background: transparent;
-    flex: 1 ;
-    border: 0;
-    color: #FFFFFF;
-    }
 `
 
 export const Menu = styled.a`
     font-family: 'Open Sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
     margin-right: 12px;

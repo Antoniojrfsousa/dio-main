@@ -1,30 +1,34 @@
 import { Button } from "../../components/Button"
 import { Header } from "../../components/Header"
-
-import { Container, TextContent, Title, TitleHighLight } from "./styles"
+import { Card } from "../../components/Card"
+import { UserInfo } from "../../components/UserInfo"
+import { Container, Column, Title, TitleHighLight } from "./styles"
 
 const Feed = () => {
 
     return (<>
-        <Header />
+        <Header autenticado={true}/>
         <Container>
-            <div>
-                <Title>
-                    <TitleHighLight>
-                    Implemente 
-                    <br />
-                    </TitleHighLight>
-                    o seu futuro global agora!
-                </Title>
-                <TextContent>
-                    Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo e encare seu novos
-                    desafio profissional, evoluindo em comunidade com os melhores experts.
-                </TextContent>
-                <Button title="Começar agora" variant="secondary" onClick={() => null}/>
-            </div>
-            <div>
-                <img src="" alt="imagem principal" />
-            </div>
+            <Column flex={3}>
+                <Title>Feed</Title>
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </Column>
+            <Column flex={1}>
+                <TitleHighLight># RANKING 5 TOP DA SEMANA</TitleHighLight>
+                <UserInfo percentual={80} nome="Antonio Feitosa" image="https://avatars.githubusercontent.com/u/99521360?s=48&v=4" />
+                <UserInfo percentual={27} nome="Antonio Feitosa" image="https://avatars.githubusercontent.com/u/99521360?s=48&v=4" />
+                <UserInfo percentual={80} nome="Antonio Feitosa" image="https://avatars.githubusercontent.com/u/99521360?s=48&v=4" />
+                <UserInfo percentual={89} nome="Antonio Feitosa" image="https://avatars.githubusercontent.com/u/99521360?s=48&v=4" />
+                
+            </Column>
         </Container>
     </>)
 }
