@@ -1,4 +1,4 @@
-import { MdEmail, MdLock } from "react-icons/md";
+import { MdEmail, MdLock, MdPerson  } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
@@ -18,7 +18,7 @@ const schema = yup.object({
     password: yup.string().min(3, 'No minimo 3 caracteres').required('Campo obrigatório'),
 }).required();
 
-const Login = () => {
+const Cadastro = () => {
     const navigate = useNavigate();
 
     const { control, handleSubmit, formState: { errors } } = useForm({
@@ -45,21 +45,23 @@ const Login = () => {
             <Column>
                 <Title>
                 A plataforma para você aprender com experts, dominar as principais tecnologias
-                e entrar mais rápido nas empresas mais desejadas.
+                 e entrar mais rápido nas empresas mais desejadas.
                 </Title>
             </Column>
             <Column>
                 <Wrapper>
-                    <TitleLogin>Faça seu cadastro</TitleLogin>
-                    <SubtitleLogin>Faça seu login e make the change.</SubtitleLogin>
+                    <TitleLogin>Comece agora grátis</TitleLogin>
+                    <SubtitleLogin>Crie sua conta e make the change._</SubtitleLogin>
                     <form onSubmit={handleSubmit(onSubmit)}> 
+                        <Input name="nome" errorMessage={errors?.email?.message} control={control} placeholder="Nome Completo" leftIcon={<MdPerson />} />
                         <Input name="email" errorMessage={errors?.email?.message} control={control} placeholder="E-mail" leftIcon={<MdEmail />} />
                         <Input name="password" errorMessage={errors?.password?.message} control={control} placeholder="Senha" type="password" leftIcon={<MdLock />} />
-                        <Button title="Entrar" variant="secondary"  type="submit"/>
+                        <Button title="Criar minha conta" variant="secondary"  type="submit"/>
                     </form>
+                    <SubtitleLogin>Ao clicar em "criar minha conta grátis", declaro que aceito as Políticas de Privacidade e os Termos de Uso da DIO.</SubtitleLogin>
                     <Row>
-                        <EsqueciText>Esqueci minha senha</EsqueciText>
-                        <CriarText>Criar Conta</CriarText>
+                        <EsqueciText>Já tenho conta.   <a href="/login" color="green">   Fazer login</a></EsqueciText>
+                      
                     </Row>
                 </Wrapper>
             </Column>
@@ -67,4 +69,4 @@ const Login = () => {
     </>)
 }
 
-export { Login }
+export { Cadastro }

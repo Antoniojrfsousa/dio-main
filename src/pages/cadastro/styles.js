@@ -14,7 +14,7 @@ export const Container = styled.main`
 `
 
 export const Wrapper = styled.div`
-    max-width: 300px;
+    max-width: 374px;
 `
 
 
@@ -53,8 +53,9 @@ export const TitleLogin = styled.p`
 export const SubtitleLogin = styled.p`
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 372;
     font-size: 18px;
+    margin-top: 15px;
     margin-bottom: 35px;
     line-height: 25px;
 `
@@ -65,7 +66,7 @@ export const EsqueciText = styled.p`
     font-size: 14px;
     line-height: 19px;
 
-    color: #E5E044;
+    
 `
 export const CriarText = styled.p`
     font-family: 'Open Sans';
@@ -74,7 +75,16 @@ export const CriarText = styled.p`
     font-size: 14px;
     line-height: 19px;
 
-    color: #E23DD7;
+    color: ##1FA346;
+`
+export const FazerLogin = styled.span`
+font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: ##1FA346;
 `
 
 
