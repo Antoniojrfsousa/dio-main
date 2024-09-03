@@ -52,6 +52,7 @@ export const Menu = styled.a`
     color: #FFFFFF;
     margin-right: 12px;
     text-decoration: none;
+    
 `
 export const MenuRight = styled.a`
     font-family: 'Open Sans';
@@ -61,6 +62,7 @@ export const MenuRight = styled.a`
     color: #FFFFFF;
     margin-right: 12px;
     text-decoration: none;
+    
 `
 
 export const UserPicture = styled.img`
