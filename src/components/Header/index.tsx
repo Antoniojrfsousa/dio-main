@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../../assents/logo-dio 1.png';
 import { useNavigate } from "react-router-dom";
+import {IHeader} from './types'
 import {
     BuscarInputContainer,
     Container,
@@ -16,7 +17,7 @@ import { Button } from '../Button';
 
 
  
-const Header = ({autenticado}) => {
+const Header = ({autenticado}: IHeader) => {
 
     const navigate = useNavigate();
 
